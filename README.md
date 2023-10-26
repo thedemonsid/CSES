@@ -1,2 +1,0 @@
-# CSES
-My CP progress
