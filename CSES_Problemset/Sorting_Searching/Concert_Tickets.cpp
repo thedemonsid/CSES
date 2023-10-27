@@ -29,6 +29,7 @@ int main() {
         if(it == t.begin())cout<<"-1\n";
         else{
             cout<< *(--it)<<"\n";
+            t.erase(it);
         }
     }
 
