@@ -25,9 +25,11 @@ int main() {
     for(int i=0;i<m;i++){
         int x;
         cin>>x;
-        if(t.upper_bound(x)==t.begin())cout<<"-1\n";
+        auto it = t.upper_bound(x);
+        if(it == t.begin())cout<<"-1\n";
         else{
-            
+            cout<< *(--it)<<"\n";
+            t.erase(it);
         }
     }
 
